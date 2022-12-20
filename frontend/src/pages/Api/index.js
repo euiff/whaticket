@@ -44,41 +44,41 @@ const Api = () => {
     return (
         <div className={classes.root}>
             <Container>
-                <h2>Documentação para envio de mensagens</h2>
+                <h2>Documentation for sending messages</h2>
 
-                <h2 className={classes.color}>Métodos de Envio</h2>
+                 <h2 className={classes.color}>Sending Methods</h2>
 
-                <p className={classes.text}>1. Mensagens de Texto</p>
-                <p className={classes.text}>2. Mensagens de Mídia</p>
+                 <p className={classes.text}>1. Text Messages</p>
+                 <p className={classes.text}>2. Media Messages</p>
 
-                <h2 className={classes.color}>Instruções</h2>
-                <p><b>Observações Importantes</b></p>
-                <ul>
-                    <li>Para pegar o token da API, vá em configurações que seu token estará la, sem ele não será possivel enviar mensagens.</li>
-                    <li>O número para envio não deve ter mascara ou caracteres especiais e deve ser composto por:</li>
-                    <br />
-                    <ol>
-                        <ul>
-                            <li>whatsappId</li>
-                            <li>Código do pais - Ex: 55 (Brasil)</li>
-                            <li>DDD</li>
-                            <li>Número</li>
-                        </ul>
-                    </ol>
-                </ul>
-                <h2 className={classes.color}>1. Mensagens de Texto</h2>
-                <p>Seguem abaixo lista de informacoes necessárias para envio das mensagens de texto:</p>
-                <p className={classes.textP}><b>URL: </b>{process.env.REACT_APP_BACKEND_URL}/api/messages/send</p>
-                <p className={classes.textP}><b>Metódo: </b>POST</p>
-                <p className={classes.textP}><b>Headers: </b>Authorization: Bearer (token) e Content-Type application/json</p>
-                <p className={classes.textP}><b>Body: </b>whatsappId: 1 , "number": "5599999999999", "body": "Enviado via api"</p>
+                 <h2 className={classes.color}>Instructions</h2>
+                 <p><b>Important Observations</b></p>
+                 <ul>
+                     <li>To get the API token, go to settings and your token will be there, without it it will not be possible to send messages.</li>
+                     <li>The number to send must not have a mask or special characters and must consist of:</li>
+                     <br />
+                     <ol>
+                         <ul>
+                             <li>whatsappId</li>
+                             <li>Country code - Ex: 91 (INDIA)</li>
+                             <li>DDD</li>
+                             <li>Number</li>
+                         </ul>
+                     </ol>
+                 </ul>
+                 <h2 className={classes.color}>1. Text Messages</h2>
+                 <p>The following is a list of information needed to send text messages:</p>
+                 <p className={classes.textP}><b>URL: </b>{process.env.REACT_APP_BACKEND_URL}/api/messages/send</p>
+                 <p className={classes.textP}><b>Method: </b>POST</p>
+                 <p className={classes.textP}><b>Headers: </b>Authorization: Bearer (token) and Content-Type application/json</p>
+                 <p className={classes.textP}><b>Body: </b>whatsappId: 1 , "number": "9199999999999", "body": "Sent via api"</p>
 
-                <h2 className={classes.color}>2. Mensagens de Mídia</h2>
-                <p>Seguem abaixo lista de informacoes necessárias para envio de midias:</p>
-                <p className={classes.textP}><b>URL: </b>{process.env.REACT_APP_BACKEND_URL}/api/messages/send</p>
-                <p className={classes.textP}><b>Metódo: </b>POST</p>
-                <p className={classes.textP}><b>Headers: </b>Authorization: Bearer (token) e Content-Type multipart/form-data</p>
-                <p className={classes.textP}><b>Body: </b>whatsappId: 1 , "number": "5599999999999", "medias": "aqui vai sua midia", "body": "Enviado via api"</p>
+                 <h2 className={classes.color}>2. Media Messages</h2>
+                 <p>The following is a list of information needed to send media:</p>
+                 <p className={classes.textP}><b>URL: </b>{process.env.REACT_APP_BACKEND_URL}/api/messages/send</p>
+                 <p className={classes.textP}><b>Method: </b>POST</p>
+                 <p className={classes.textP}><b>Headers: </b>Authorization: Bearer (token) and Content-Type multipart/form-data</p>
+                 <p className={classes.textP}><b>Body: </b>whatsappId: 1 , "number": "9199999999999", "medias": "here's your media", "body": "Sent via api "</p>
             </Container>
         </div>
     );
