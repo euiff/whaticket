@@ -285,6 +285,8 @@ const messages = {
           contacts: "Contacts",
           quickAnswers: "Quick Answers",
           queues: "Queues",
+          tags: "Tags",
+		      bots: "Chatbot",
           administration: "Administration",
           users: "Users",
           settings: "Settings",
